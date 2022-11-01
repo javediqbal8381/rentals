@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Roboto:ital,wght@0,500;1,400&family=Space+Mono&display=swap');
+
+/* .default-layout{
+    
+} */
+.a-tag{
+    color: white;
+    text-decoration: none;
+}
+.a-tag:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.site-logo{
+    font-family: 'Orbitron', sans-serif;
+
+}
+.header{
+    padding: 10px;
+    background-color: transparent;
+    background-color: black;
+    /* background-image: linear-gradient(to right, rgb(255, 145, 0) ,rgb(247, 212, 18), rgb(255, 251, 1),rgb(234, 250, 90)); */
+    
+  
+  }
+  .default-layout{
+      /* background-image: url('../images/background.jpg'); */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    
+
+  }
+
+  .menu-button{
+    height:35px;
+    width: 80px;
+    margin-top: 7px;
+    background-color: transparent;
+    border-radius: 30px;
+    border-color: orange;
+    
+    }
+  
+  
