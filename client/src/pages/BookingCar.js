@@ -88,8 +88,8 @@ function BookingCar({ match }) {
         </Col>
 
         <Col lg={10} sm={24} xs={24}>
-          <Divider className='bookingcar-divider' type='horizental' dashed >Car info</Divider>
-          <div>
+          <Divider className='bookingcar-divider' type='horizental' dashed ><span>Car info</span></Divider>
+          <div className='bookingcar-divider-2nd-div'>
             <p>Car : {car.name}</p>
             <p> Fuel type : {car.fueltype}</p>
             <p>Capacity  : {car.capacity} persons</p>
@@ -111,8 +111,8 @@ function BookingCar({ match }) {
                 else {
                   setDriver(false);
                 }
-              }}>Need A Driver</Checkbox>
-              <h4>Total Amount : {totalAmount}</h4>
+              }}><span style={{color:'white'}}>Need A Driver</span></Checkbox>
+              <h4 style={{color:'white'}}>Total Amount : {totalAmount}</h4>
 
               <StripeCheckout
               shippingAddress
@@ -130,9 +130,9 @@ function BookingCar({ match }) {
         </Col>
 
         {car.name && (
-          <Modal visible={showModal} closable={false} footer={false} title='booked time slots'>
+          <Modal  visible={showModal} closable={false} footer={false} title='booked time slots'>
 
-            <div className='p-2'>
+            <div  className='p-3'>
               {car.bookedTimeSlots.map((slot) => {
                 return (
                   <button className='btn1'>{slot.from} - {slot.to}</button>
@@ -140,7 +140,7 @@ function BookingCar({ match }) {
 
               })}
               <div className='text-right mt-5'>
-                <button className='btn1 seebookedslots' onClick={() => { setShowModal(false) }}> close</button>
+                <button style={{color:'black'}} className='btn1 seebookedslots' onClick={() => { setShowModal(false) }}> close</button>
               </div>
 
             </div>

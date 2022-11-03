@@ -16,25 +16,25 @@ function AddCar () {
     
   return <DefaultLayout>
       {loading?(<Spinner name="Adding Car"/>):(
-        <Row justify='center mt-5'>
+        <Row justify='center mt-5' className='addcar-therentals'>
         <Col lg={12} sm={24} xs={24}>
-            <Form className='bs1 p-2' layout='vertical' onFinish={onFinish}>
-                <h3>Add New Car</h3>
+            <Form  className='bs1 p-2' layout='vertical' onFinish={onFinish}>
+                <h3 className='sdfhdjkfhs'>Add New Car</h3>
                 <hr/>
-            <Form.Item name='name' label='car name' rules={[{required: true}]}>
-                <Input/>
+            <Form.Item className='sdfhdjkfhs' name='name' label='car name' rules={[{required: true}]}>
+                <Input className='bnmbnbnb' placeholder='name'/>
             </Form.Item>
-            <Form.Item name='image' label='image url' rules={[{required: true}]}>
-                <Input/>
+            <Form.Item  className='sdfhdjkfhs' name='image' label='image url' rules={[{required: true}]}>
+                <Input className='bnmbnbnb' placeholder='Image URL'/>
             </Form.Item>
-            <Form.Item name='rentPerHour' label='rent per hour' rules={[{required: true}]}>
-                <Input/>
+            <Form.Item  className='sdfhdjkfhs' name='rentPerHour' label='rent per hour' rules={[{required: true}]}>
+                <Input className='bnmbnbnb' placeholder='rent Per Hour'/>
             </Form.Item>
-            <Form.Item name='capacity' label='Capacity' rules={[{required: true}]}>
-                <Input/>
+            <Form.Item  className='sdfhdjkfhs' name='capacity' label='Capacity' rules={[{required: true}]}>
+                <Input className='bnmbnbnb' placeholder='Capacity'/>
             </Form.Item>
-            <Form.Item name='fueltype' label='fuel Type' rules={[{required: true}]}>
-                <Input/>
+            <Form.Item  className='sdfhdjkfhs' name='fueltype' label='fuel Type' rules={[{required: true}]}>
+                <Input className='bnmbnbnb' placeholder='Fuel Type'/>
             </Form.Item>
             <button className ='add-car-btn-addcar'>ADD CAR</button>
             </Form>

@@ -3,6 +3,7 @@
 /* .default-layout{
     
 } */
+
 .a-tag{
     color: white;
     text-decoration: none;
@@ -19,21 +20,20 @@
 .header{
     padding: 10px;
     background-color: transparent;
-    background-color: black;
     /* background-image: linear-gradient(to right, rgb(255, 145, 0) ,rgb(247, 212, 18), rgb(255, 251, 1),rgb(234, 250, 90)); */
     
   
   }
   .default-layout{
-      /* background-image: url('../images/background.jpg'); */
-      background-size: cover;
-      background-position: center;
-      height: 100vh;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-    
+      background-image: url('https://res.cloudinary.com/ddnrxtthk/image/upload/v1667319371/nisaan3_i5kcg6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100vw;
 
   }
+
 
   .menu-button{
     height:35px;
@@ -43,6 +43,19 @@
     border-radius: 30px;
     border-color: orange;
     
+    }
+
+    .content-the-rentals{
+        margin-top: 1rem;
+        margin-bottom: 15rem;
+    }
+  
+
+    @media only screen and (max-width:800px) {
+        .default-layout{
+            background-image: url('https://res.cloudinary.com/ddnrxtthk/image/upload/v1667452304/back1_qfcrok.jpg') ;
+    
+        }
     }
   
   

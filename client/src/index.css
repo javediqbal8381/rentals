@@ -8,6 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: azure;
+  color: white;
 
 }
 
@@ -17,9 +18,7 @@ code {
 }
 
 
-.bs1{
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
+
 h1{
   font-size: 30px;
   font-weight: bold;
@@ -27,9 +26,7 @@ h1{
 }
 
 
-.content{
-  min-height: 90vh;
-}
+
 
 .carimg{
   height: 130px;

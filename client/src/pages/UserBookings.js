@@ -18,13 +18,14 @@ function UserBookings() {
     }, [] );
 
     return (
-        <DefaultLayout>
+        <DefaultLayout >
+        <div className='userbooking-the-rentals'>
                   {loading && (<Spinner />)}
 
-            <h3 className='text-center mt-2  '>Mybookings</h3>
+            <h3 style={{color:'white'}} className='text-center mt-2  '>Mybookings</h3>
 
-            <Row className='center '>
-                <Col lg={16} sm={24}>
+            <div className='userbookings-card-container '>
+                
                 {bookings.filter(o=>o.user==user._id).map((booking) => {
              return <Row gutter={16} className="bs1 mt-3 text-left user-booking-card">
                 <Col className='user-booking-card-left' lg={6} sm={24}>
@@ -35,8 +36,8 @@ function UserBookings() {
                 </Col>
 
                 <Col className='user-booking-card-mid' lg={12} sm={24}>
-                <p>Transaction Id : <b>{booking.transactionId}</b></p>
-                <p>From: <b>{booking.bookedTimeSlots.from}</b></p>
+                <p className='ist-p'><span>Transaction Id :</span> <b>{booking.transactionId}</b></p>
+                <p >From: <b>{booking.bookedTimeSlots.from}</b></p>
                 <p>To: <b>{booking.bookedTimeSlots.to}</b></p>
                 <p>Date of booking: <b>{moment(booking.createdAt).format('MMM DD yyyy')}</b></p>
                 </Col>
@@ -49,12 +50,12 @@ function UserBookings() {
 
 
 
-                </Col>
-            </Row>
+                
+            </div>
+        </div>
         </DefaultLayout>
 
     )
-    console.log(bookings)
 }
 
 export default UserBookings;

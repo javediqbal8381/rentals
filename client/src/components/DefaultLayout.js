@@ -25,6 +25,11 @@ function DefaultLayout(props) {
                 Bookings
                </a>
            </Menu.Item>
+           <Menu.Item>
+               <a  href='/Contactus'>
+                Contact us
+               </a>
+           </Menu.Item>
            <Menu.Item onClick={()=>{
                localStorage.removeItem('user')
                window.location.href='/login'
@@ -63,7 +68,7 @@ function DefaultLayout(props) {
                       </span>
                     </a> : null
                     }
-                    <a href='Contactus' className="nav-btn v6">
+                    <a href='/contactus' className="nav-btn v6">
                       <span className="label0">Contact us</span>
                       <span className="icon-btn">
                         <span></span>
@@ -97,7 +102,7 @@ function DefaultLayout(props) {
               </Row>
             </div>
 
-            <div className='content'>
+            <div className='contentz'>
                 {props.children}
             </div>
             <div className='footer-in-home'>

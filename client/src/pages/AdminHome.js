@@ -53,10 +53,11 @@ function AdminHome() {
     <>
     {loading?(<Spinner/>):(
       <DefaultLayout>
+        <div className='admin-home-the-rentals'>
       <br></br><br></br>
              <div><h1 className='admin-h1'>A D M I N   &nbsp; &nbsp;  P A N E L</h1></div>
       <Row justify='center' gutter={15} className='mt-2'>
-        <Col lg={20} sm={24}><div className='text-left'>
+        <Col lg={20} sm={24}><div className='text-right'>
           
           <button onClick={()=>{window.location.href='/addcar'}} className='add-car-btn-admin'>Add Car</button>
           <button onClick={()=>{window.location.href='/allusers'}} className='add-car-btn-admin'>USERS</button>
@@ -92,8 +93,9 @@ function AdminHome() {
               </div>
             </Col>
           })
-        }
+        } 
       </Row>
+      </div>
     </DefaultLayout>
     )}
     

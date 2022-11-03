@@ -36,7 +36,7 @@ function EditCar ({match}) {
         <Row justify='center mt-5'>
         <Col lg={12} sm={24} xs={24}>
             {totalcars.length > 0 && (<Form initialValues={car} className='bs1 p-2' layout='vertical' onFinish={onFinish}>
-                <h3>Edit Car</h3>
+                <h3 className='sdfhdjkfhs'>Edit Car</h3>
                 <hr/>
             <Form.Item name='name' label='car name' rules={[{required: true}]}>
                 <Input/>

@@ -3,14 +3,11 @@ import { useSelector, useDispatch } from 'react-redux'
 import { getAllCars } from '../redux/actions/carsAction';
 import { Row, Col, DatePicker } from 'antd'
 import Spinner from '../components/Spinner';
-import { Menu, Dropdown} from 'antd';
 import { GrLinkedin, GrFacebook } from 'react-icons/gr';
 import { ImWhatsapp } from 'react-icons/im'
 import { SiGmail } from 'react-icons/si'
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { Link } from 'react-router-dom'
-import moment from 'moment';
-import './home.css'
+import './landingpage.css'
 const { RangePicker } = DatePicker
 
 function LandingPage() {
@@ -36,39 +33,16 @@ function LandingPage() {
 
   
 
-  var menu = (
-    <Menu>
-      <Menu.Item>
-        <a href='/'>
-          home
-        </a>
-      </Menu.Item>
-      <Menu.Item>
-        <a href='/admin'>
-          Admin
-        </a>
-      </Menu.Item>
-      <Menu.Item>
-        <a href='/bookings'>
-          Bookings
-        </a>
-      </Menu.Item>
-      <Menu.Item>
-      <Link to='/login'>login</Link>
-      </Menu.Item>
-    </Menu>
-    
-  );
+
  
   
   
   
   return (
-    <div  className='wholle-container-home'>
-      <Parallax pages={3} className='landingpage'>
+    <div className='landingpage-ist'>
 
 
-        <ParallaxLayer offset={0} speed={1} >
+        <section className='home-section-1' >
           <div>
             <div className='header bs1' id='navbar'>
               <Row gutter={16} justify='center'>
@@ -114,9 +88,9 @@ function LandingPage() {
 
                   </div>
                       <div>
-                        <Dropdown overlay={menu} placement="bottomLeft" >
-                          <button className='menu-button'>Menu</button>
-                        </Dropdown>
+                        
+                          <button className='menu-button'><Link style={{color:'white'}} to='register'>Register</Link></button>
+                        
                       </div>
 
                     </div>
@@ -158,13 +132,13 @@ function LandingPage() {
             </div>
            
           
-        </ParallaxLayer>
+        </section>
 
 
 
 
 
-        <ParallaxLayer offset={1} speed={1} className="parallax-1">
+        <section offset={1} speed={1} className="parallax-1">
 
           <div>
             <Row className='mt-3' justify='center'>
@@ -184,7 +158,7 @@ function LandingPage() {
                           <p>{car.name}</p>
                           <p> Rent per hour {car.rentPerHour}/-</p>
                         </div>
-                        <div><button className='btn1 book-btn-inhome'><Link className='book-link-inbutton' to='/login'>Book Now</Link></button></div>
+                        <div><button className='btn1 book-btn-inhome'><Link className='book-link-inbutton' to='/register'>Book Now</Link></button></div>
                       </div>
                     </div>
                   </Col>
@@ -194,13 +168,13 @@ function LandingPage() {
             </Row>
 
           </div>
-        </ParallaxLayer>
+        </section>
 
 
 
 
 
-        <ParallaxLayer offset={2} speed={1} className='parallax-2'>
+        <section offset={2} speed={1} className='parallax-2'>
           <div className='footer-in-home'>
             <div className='footer-left'>
               <a><h6>FAQs</h6></a>
@@ -221,13 +195,13 @@ function LandingPage() {
             </div>
 
           </div>
-        </ParallaxLayer>
+        </section>
 
 
 
 
-      </Parallax>
-    </div>
+      </div>
+    
   )
 }
 
