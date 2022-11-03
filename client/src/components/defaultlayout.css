@@ -31,7 +31,7 @@
     background-position: center center;
     background-attachment: fixed;
     width: 100vw;
-
+       overflow-x: hidden;
   }
 
 
