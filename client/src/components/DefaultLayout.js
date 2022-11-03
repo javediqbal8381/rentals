@@ -43,7 +43,7 @@ function DefaultLayout(props) {
         <div className='default-layout'>
            <div className='header bs1'>
               <Row gutter={16} justify='center'>
-                <Col lg={20} sm={24} xs={24}>
+                <Col lg={24} sm={24} xs={24}>
                   <div className="d-flex justify-content-between">
                     <h1 className='h1-sitelogo'><a className='a-tag-site-logo' href='/'><b>THE RENTALS</b></a></h1>
 
